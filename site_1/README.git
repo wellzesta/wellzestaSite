@@ -1,0 +1,2 @@
+To update this site on the cpanel server: 
+git pull origin master
