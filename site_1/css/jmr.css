@@ -1,0 +1,179 @@
+/*==========  UI  ==========*/
+h1, h2, h3 {
+  font-weight: 300; }
+
+.btn-download {
+  color: white;
+  background-color: transparent;
+  border-color: white;
+  min-width: 200px; }
+  .btn-download:hover, .btn-download:focus, .btn-download:active, .btn-download.active {
+    color: #6d9cc6;
+    background-color: white; }
+  .open .btn-download.dropdown-toggle {
+    color: #6d9cc6;
+    background-color: white; }
+
+/*==========  page  ==========*/
+.header {
+  background-color: rgba(248, 248, 248, 0.7);
+  border-bottom: 1px solid #eeeeee;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  padding: 0; }
+
+.main-content {
+  padding: 50px 0 0; }
+
+.brand {
+  background-color: #DDDDDD;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0 100px;
+  margin: 0px 0 0px;
+  background-size: contain; }
+  .brand h2 {
+    font-size: 36px;
+    line-height: 60px;
+    margin-bottom: 12px; }
+  .brand .btn-download {
+    margin-bottom: 30px; }
+  .brand .preview-img {
+    display: block;
+    width: 100%;
+    max-width: 322px;
+    margin: 0 auto;    
+/*This gives space above and below the image. The scroll-point is the top of the padded region*/
+    padding-top: 10px; 
+    padding-bottom: 10px;}
+
+.banner {
+  background-color: #5b90bf;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 50px 0 0; }
+  .banner h2 {
+    font-size: 36px;
+    line-height: 60px;
+    margin-bottom: 12px; }
+  .banner .btn-download {
+    margin-bottom: 30px; }
+  .banner .preview-img {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; }
+
+.features {
+  padding: 50px 0;
+  border-bottom: 1px solid #eeeeee; }
+  .features > header {
+    padding: 0 20px;
+    margin-bottom: 60px; }
+  .features header h3 {
+    text-transform: uppercase; }
+  .features .feature-item {
+    margin-bottom: 50px; }
+    .features .feature-item > i {
+      font-size: 48px;
+      line-height: 100px;
+      height: 100px;
+      width: 100px;
+      padding: 0;
+      border-radius: 50%;
+      border: 2px solid #999999; }
+    .features .feature-item .desc {
+      max-width: 280px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #999999; }
+
+.details .list-details {
+  margin: 0; }
+  .details .list-details > li {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #f2f4f8; }
+    .details .list-details > li.alt {
+      background-color: #1c2b36; }
+      @media (min-width: 768px) {
+        .details .list-details > li.alt .detail-item {
+          margin-right: 0;
+          margin-left: 50%; }
+          .details .list-details > li.alt .detail-item .detail-desc {
+            margin-right: 0;
+            margin-left: -100%;
+            float: left; } }
+    @media (min-width: 768px) {
+      .details .list-details > li {
+        text-align: left; }
+        .details .list-details > li h2 {
+          font-size: 48px;
+          line-height: 70px; }
+        .details .list-details > li .detail-item {
+          margin-right: 50%; }
+          .details .list-details > li .detail-item .detail-desc {
+            margin-right: -100%;
+            float: right; }
+        .details .list-details > li .detail-desc {
+          padding: 10px 15px 0;
+          width: 100%;
+          max-width: 100%;
+          font-size: 16px; } }
+    @media (min-width: 1200px) {
+      .details .list-details > li > .container {
+        width: 970px; } }
+    .details .list-details > li .detail-desc {
+      margin-bottom: 50px; }
+    .details .list-details > li .detail-img {
+      padding: 0 15px; }
+      .details .list-details > li .detail-img img {
+        display: inline-block;
+        max-width: 100%; }
+
+.testimonials {
+  background-color: #5b90bf;
+  padding: 10px 10px;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.8); }
+  .testimonials .carousel {
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 80px; }
+    .testimonials .carousel .carousel-indicators li {
+      border: 1px solid #eeeeee;
+      border: 1px solid rgba(255, 255, 255, 0.3); }
+      .testimonials .carousel .carousel-indicators li.active {
+        background-color: #eeeeee;
+        background-color: rgba(255, 255, 255, 0.6); }
+    .testimonials .carousel .carousel-inner {
+      font-size: 18px;
+      min-height: 125px; }
+      .testimonials .carousel .carousel-inner small {
+        display: block;
+        margin-top: 30px;
+        font-size: 12px; }
+
+.footer {
+  background-color: #1c2b36;
+  padding: 30px 0;
+  font-size: 12px; }
+
+.social {
+  padding-top: 15px;
+  padding-bottom: 0px; }
+  .social-icon {
+      text-align: center; 
+      font-size: 24px;
+      line-height: 40px;
+      height: 40px;
+      width: 40px;
+      padding: 0;
+      border-radius: 50%;
+      border: 2px solid #999999; }
+
+
+
+.spacer {
+  background-color: #5b90bf;
+  padding-top: 100px; }
