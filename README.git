@@ -1,3 +1,7 @@
+The original site was pulled into godaddy server using
+git clone https://github.com/wellzesta/wellzestaSite.git
+this installed wellzestaSite in ~/public_html/wellzesta.com
+
 To update this site on the cpanel server: 
 git pull origin master
 
@@ -5,8 +9,9 @@ This can be automated as follows:
 ssh johnmrobinson@23.229.190.164 "cd public_html/wellzesta.com/wellzestaSite; git pull"
 
 even better:
-just type: update_wellzesta
-update_wellzesta is an alias in .bash_profile
+just type: update_wellzesta 
+
+How?: update_wellzesta is an alias in .bash_profile
 alias update_wellzesta='ssh johnmrobinson@23.229.190.164 "cd public_html/wellzesta.com/wellzestaSite; git pull"'
 
 
