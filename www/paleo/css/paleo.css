@@ -22,29 +22,36 @@ h1, h2, h3 {
   padding: 0; }
 
 .main-content {
-  padding: 50px 0 0; }
+  padding: 0px 0 0; }
 
 .brand {
-  background-color: #DDDDDD;
-  color: #fff;
+  /*background-color: #DDDDDD;*/
   text-align: center;
-  padding: 100px 0 100px;
-  margin: 0px 0 0px;
-  background-size: contain; }
+  padding: 50px 0 0; ;
+  margin: 0px 0 0px; }
   .brand h2 {
     font-size: 36px;
     line-height: 60px;
     margin-bottom: 12px; }
+  @media (min-width: 768px) {
+    .brand h2 {
+      font-size: 48px;
+      line-height: 70px; } }
   .brand .btn-download {
-    margin-bottom: 30px; }
+    margin-bottom: 30px; 
+    color: #626262;
+    border-color: #626262; }
+  .brand .btn-download:hover {
+    color: #5b90bf; 
+    background-color: #626262; }
   .brand .preview-img {
     display: block;
     width: 100%;
     max-width: 322px;
-    margin: 0 auto;    
-/*This gives space above and below the image. The scroll-point is the top of the padded region*/
+    margin: 0 auto; }
+/*This gives space above and below the image. The scroll-point is the top of the padded region
     padding-top: 10px; 
-    padding-bottom: 10px;}
+    padding-bottom: 10px;} */
 
 .banner {
   background-color: #5b90bf;
@@ -56,6 +63,10 @@ h1, h2, h3 {
     font-size: 36px;
     line-height: 60px;
     margin-bottom: 12px; }
+  @media (min-width: 768px) {
+    .banner h2 {
+      font-size: 48px;
+      line-height: 70px; } }  
   .banner .btn-download {
     margin-bottom: 30px; }
   .banner .preview-img {
@@ -64,17 +75,24 @@ h1, h2, h3 {
     max-height: 600px;
     margin: 0 auto; }
 
-.features {
-  padding: 50px 0;
-  border-bottom: 1px solid #eeeeee; }
-  .features > header {
+.fitness {
+  padding-top: 50px;
+  padding-bottom: 0px;
+  border-bottom: 2px solid #eeeeee; }
+  .fitness > header {
     padding: 0 20px;
     margin-bottom: 60px; }
-  .features header h3 {
+  .fitness header h2 {
+    text-align: center; }
+  @media (min-width: 768px) {
+    .fitness header h2 {
+      font-size: 48px;
+      line-height: 70px; } }  
+  .fitness header h3 {
     text-transform: uppercase; }
-  .features .feature-item {
+  .fitness .feature-item {
     margin-bottom: 50px; }
-    .features .feature-item > i {
+    .fitness .feature-item > i {
       font-size: 48px;
       line-height: 100px;
       height: 100px;
@@ -82,11 +100,94 @@ h1, h2, h3 {
       padding: 0;
       border-radius: 50%;
       border: 2px solid #999999; }
-    .features .feature-item .desc {
+    .fitness .feature-item .desc {
       max-width: 280px;
       margin-left: auto;
       margin-right: auto;
       color: #999999; }
+
+.fitness-testimonials {
+  padding: 10px 10px;
+  text-align: center; }
+  .fitness-testimonials h3 {
+  text-transform: uppercase; }
+  .fitness-testimonials .carousel {
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 60px; }
+    .fitness-testimonials .carousel .carousel-indicators li {
+      border: 1px solid #999999; }
+      /*border: 1px solid rgba(255, 255, 255, 0.3); }*/
+      .fitness-testimonials .carousel .carousel-indicators li.active {
+        background-color: #999999; }
+        /*background-color: rgba(255, 255, 255, 0.6); }*/
+    .fitness-testimonials .carousel .carousel-inner {
+      font-size: 18px;
+      min-height: 125px; }
+      .fitness-testimonials .carousel .carousel-inner small {
+        display: block;
+        margin-top: 30px;
+        font-size: 12px; }
+
+.foodie {
+  padding-top: 50px;
+  padding-bottom: 0px;
+  background-color: #5b90bf;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid #eeeeee; }
+  .foodie > header {
+    padding: 0 20px;
+    margin-bottom: 60px; }
+  .foodie header h2 {
+    text-align: center; }
+  @media (min-width: 768px) {
+    .foodie header h2 {
+      font-size: 48px;
+      line-height: 70px; } }  
+  .foodie header h3 {
+    text-transform: uppercase; }
+  .foodie .feature-item {
+    margin-bottom: 50px; }
+    .foodie .feature-item > i {
+      font-size: 48px;
+      line-height: 100px;
+      height: 100px;
+      width: 100px;
+      padding: 0;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      color: rgba(255, 255, 255, 0.8); }
+    .foodie .feature-item .desc {
+      max-width: 280px;
+      margin-left: auto;
+      margin-right: auto;
+      color: #fff; 
+      color: rgba(255, 255, 255, 0.8); }
+
+.foodie-testimonials {
+  padding: 10px 10px;
+  text-align: center; 
+  background-color: #5b90bf;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.8); }
+  .foodie-testimonials .carousel {
+    max-width: 970px;
+    margin: 0 auto;
+    padding: 80px; }
+    .foodie-testimonials .carousel .carousel-indicators li {
+      border: 1px solid #eeeeee;
+      border: 1px solid rgba(255, 255, 255, 0.3); }
+      .foodie-testimonials .carousel .carousel-indicators li.active {
+        background-color: #eeeeee;
+        background-color: rgba(255, 255, 255, 0.6); }
+    .foodie-testimonials .carousel .carousel-inner {
+      font-size: 18px;
+      min-height: 125px; }
+      .foodie-testimonials .carousel .carousel-inner small {
+        display: block;
+        margin-top: 30px;
+        font-size: 12px; }
 
 .details .list-details {
   margin: 0; }
@@ -131,28 +232,8 @@ h1, h2, h3 {
         display: inline-block;
         max-width: 100%; }
 
-.testimonials {
-  background-color: #5b90bf;
-  padding: 10px 10px;
-  color: #fff;
-  color: rgba(255, 255, 255, 0.8); }
-  .testimonials .carousel {
-    max-width: 970px;
-    margin: 0 auto;
-    padding: 80px; }
-    .testimonials .carousel .carousel-indicators li {
-      border: 1px solid #eeeeee;
-      border: 1px solid rgba(255, 255, 255, 0.3); }
-      .testimonials .carousel .carousel-indicators li.active {
-        background-color: #eeeeee;
-        background-color: rgba(255, 255, 255, 0.6); }
-    .testimonials .carousel .carousel-inner {
-      font-size: 18px;
-      min-height: 125px; }
-      .testimonials .carousel .carousel-inner small {
-        display: block;
-        margin-top: 30px;
-        font-size: 12px; }
+
+
 
 .footer {
   background-color: #1c2b36;

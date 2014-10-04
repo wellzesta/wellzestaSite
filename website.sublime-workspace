@@ -47,6 +47,14 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "www/index.html",
+			"settings":
+			{
+				"buffer_size": 4230,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -98,10 +106,18 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/jmrobinson/Documents/Sites/wellzesta.com"
+		"/Users/jmrobinson/Documents/Sites/wellzesta.com",
+		"/Users/jmrobinson/Documents/Sites/wellzesta.com/www",
+		"/Users/jmrobinson/Documents/Sites/wellzesta.com/www/css",
+		"/Users/jmrobinson/Documents/Sites/wellzesta.com/www/partials"
 	],
 	"file_history":
 	[
+		"/Users/jmrobinson/Documents/Sites/wellzesta.com/www/paleo/css/paleo.css",
+		"/Users/jmrobinson/Documents/Sites/wellzesta.com/www/partials/footer.html",
+		"/Users/jmrobinson/Documents/Sites/wellzesta.com/www/paleo/index.html",
+		"/Users/jmrobinson/Documents/Sites/wellzesta.com/www/index.html",
+		"/Users/jmrobinson/Documents/Sites/wellzesta.com/www/paleo/scripts/paleo.js",
 		"/Users/jmrobinson/Library/Application Support/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
 		"/Users/jmrobinson/Documents/src/sandbox/PHP/index.html",
 		"/Users/jmrobinson/Documents/src/sandbox/PHP/send_mail.php",
@@ -260,8 +276,39 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "www/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4230,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1440,
+								1440
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
