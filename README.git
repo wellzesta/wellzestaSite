@@ -1,2 +1,17 @@
 To update this site on the cpanel server: 
 git pull origin master
+
+This can be automated as follows:
+ssh johnmrobinson@23.229.190.164 "cd public_html/wellzesta.com/wellzestaSite; git pull"
+
+even better:
+just type: update_wellzesta
+update_wellzesta is an alias in .bash_profile
+alias update_wellzesta='ssh johnmrobinson@23.229.190.164 "cd public_html/wellzesta.com/wellzestaSite; git pull"'
+
+
+Notes: for this to work, 
+(1) godaddy needs to recognize your IP address as approved.
+(2) Yuo need to have your rsa/dsa keys installed correctly.
+
+
