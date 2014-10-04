@@ -6,10 +6,11 @@ To update this site on the cpanel server:
 git pull origin master
 
 This can be automated as follows:
-ssh johnmrobinson@23.229.190.164 "cd public_html/wellzesta.com/wellzestaSite; git pull www"
+ssh johnmrobinson@23.229.190.164 "cd public_html/wellzesta.com/wellzestaSite; git pull"
 
-Note: this pulls in the www directory only. www is the "dist" of the website. Othr resources to build the site are in the repo.
-even better:
+Note: Really only want the www directory, which is our "dist". Currently, this pulls in everything. 
+
+Even better:
 just type: update_wellzesta 
 
 How?: update_wellzesta is an alias in .bash_profile
