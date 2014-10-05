@@ -32,7 +32,7 @@ h1, h2, h3 {
   .brand h2 {
     font-size: 36px;
     line-height: 60px;
-    margin-bottom: 12px; }
+    margin-bottom: 20px; }
   @media (min-width: 768px) {
     .brand h2 {
       font-size: 48px;
@@ -42,7 +42,7 @@ h1, h2, h3 {
     color: #626262;
     border-color: #626262; }
   .brand .btn-download:hover {
-    color: #5b90bf; 
+    color: white; 
     background-color: #626262; }
   .brand .preview-img {
     display: block;
@@ -62,7 +62,7 @@ h1, h2, h3 {
   .banner h2 {
     font-size: 36px;
     line-height: 60px;
-    margin-bottom: 12px; }
+    margin-bottom: 20px; }
   @media (min-width: 768px) {
     .banner h2 {
       font-size: 48px;
@@ -105,7 +105,6 @@ h1, h2, h3 {
       margin-left: auto;
       margin-right: auto;
       color: #999999; }
-
 .fitness-testimonials {
   padding: 10px 10px;
   text-align: center; }
@@ -128,6 +127,19 @@ h1, h2, h3 {
         display: block;
         margin-top: 30px;
         font-size: 12px; }
+
+.fitness-foodie-header {
+  height: 520px;
+  width: inherit;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: 60px;
+  padding-top: 30px; 
+}
+.fitness-foodie-header h2 {
+  color: white; }
+
 
 .foodie {
   padding-top: 50px;
@@ -189,6 +201,16 @@ h1, h2, h3 {
         margin-top: 30px;
         font-size: 12px; }
 
+.details {
+  padding-top: 50px; }
+.details .btn-download {
+  margin-bottom: 30px; 
+  color: #626262;
+  border-color: #626262; }
+.details .btn-download:hover {
+  color: white; 
+  background-color: #626262; }
+
 .details .list-details {
   margin: 0; }
   .details .list-details > li {
@@ -215,6 +237,7 @@ h1, h2, h3 {
           margin-right: 50%; }
           .details .list-details > li .detail-item .detail-desc {
             margin-right: -100%;
+            padding-left: 40px;
             float: right; }
         .details .list-details > li .detail-desc {
           padding: 10px 15px 0;
