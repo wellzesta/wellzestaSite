@@ -2,6 +2,13 @@
 h1, h2, h3 {
   font-weight: 300; }
 
+.popover {
+    background:  #E74C3C;
+    background-color: rgba(248, 248, 248, 0.9);
+    color: #626262;
+    border-radius: 0;
+    border-color: #626262; }
+
 .btn-download {
   color: white;
   background-color: transparent;
@@ -183,10 +190,12 @@ h1, h2, h3 {
   background-color: #5b90bf;
   color: #fff;
   color: rgba(255, 255, 255, 0.8); }
+  .foodie-testimonials h3 {
+  text-transform: uppercase; }
   .foodie-testimonials .carousel {
     max-width: 970px;
     margin: 0 auto;
-    padding: 80px; }
+    padding: 60px; }
     .foodie-testimonials .carousel .carousel-indicators li {
       border: 1px solid #eeeeee;
       border: 1px solid rgba(255, 255, 255, 0.3); }
