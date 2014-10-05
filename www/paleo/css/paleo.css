@@ -83,7 +83,7 @@ h1, h2, h3 {
     margin: 0 auto; }
 
 .fitness {
-  padding-top: 50px;
+  padding-top: 0px;
   padding-bottom: 0px;
   border-bottom: 2px solid #eeeeee; }
   .fitness > header {
@@ -112,6 +112,7 @@ h1, h2, h3 {
       margin-left: auto;
       margin-right: auto;
       color: #999999; }
+
 .fitness-testimonials {
   padding: 10px 10px;
   text-align: center; }
@@ -142,14 +143,14 @@ h1, h2, h3 {
   background-position: center center;
   background-repeat: no-repeat;
   margin-bottom: 60px;
-  padding-top: 30px; 
+  padding-top: 80px; 
 }
 .fitness-foodie-header h2 {
   color: white; }
 
 
 .foodie {
-  padding-top: 50px;
+  padding-top: 0px;
   padding-bottom: 0px;
   background-color: #5b90bf;
   color: #fff;
@@ -183,6 +184,10 @@ h1, h2, h3 {
       margin-right: auto;
       color: #fff; 
       color: rgba(255, 255, 255, 0.8); }
+
+  @media (max-width: 768px) {
+  .carousel-inner {
+  height: 350px; } }
 
 .foodie-testimonials {
   padding: 10px 10px;
