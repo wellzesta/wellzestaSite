@@ -12,7 +12,7 @@ $email_message .= "Name: ".$email_name."\n";
 $email_message .= "Email: ".$email_from."\n";
 $email_message .= $json."\n";   
 
-$email_to .= $email_from; // CC to sender
+$email_to .= ",".$email_from; // CC to sender
 
 // create email headers
 $headers = 'From: '.$email_from."\n".
