@@ -1,0 +1,174 @@
+{
+    "type": "object",
+    "$schema": "http://json-schema.org/draft-03/schema",
+    "id": "http://jsonschema.net",
+    "required": true,
+    "properties": {
+        "meta": {
+            "type": "object",
+            "id": "http://jsonschema.net/meta",
+            "required": true,
+            "properties": {
+                "recipe-id": {
+                    "type": "integer",
+                    "id": "http://jsonschema.net/meta/id",
+                    "required": false
+                },
+                "recipe-name": {
+                    "type": "string",
+                    "id": "http://jsonschema.net/meta/name",
+                    "required": true
+                },
+                "recipe-snippet": {
+                    "type": "string",
+                    "id": "http://jsonschema.net/meta/snippet",
+                    "required": true
+                },
+                "product-main-ingredient": {
+                    "type": "object",
+                    "id": "http://jsonschema.net/meta/product",
+                    "required": true,
+                    "properties": {
+                        "productName": {
+                            "type": "string",
+                            "id": "http://jsonschema.net/meta/product/productName",
+                            "required": true,
+                            "enum": [
+                                "Beef",
+                                "Seafood",
+                                "Chicken"
+                            ]
+                        },
+                        "productSKU": {
+                            "type": "integer",
+                            "id": "http://jsonschema.net/meta/product/productSKU",
+                            "required": false
+                        },
+                        "productURL": {
+                            "type": "string",
+                            "id": "http://jsonschema.net/meta/product/productURL",
+                            "required": false
+                        }
+                    }
+                },
+                "ImageUrl-large": {
+                    "type": "string",
+                    "id": "http://jsonschema.net/meta/largeImageUrl",
+                    "required": false
+                },
+                "imageUrl-medium": {
+                    "type": "string",
+                    "id": "http://jsonschema.net/meta/mediumImageUrl",
+                    "required": false
+                },
+                "imageUrl-small": {
+                    "type": "string",
+                    "id": "http://jsonschema.net/meta/smallImageUrl",
+                    "required": true
+                },
+                "imageUrl-xsmall": {
+                    "type": "string",
+                    "id": "http://jsonschema.net/meta/xsmallImageUrl",
+                    "required": true
+                },
+                "stars": {
+                    "type": "object",
+                    "id": "http://jsonschema.net/meta/stars",
+                    "required": false,
+                    "properties": {
+                        "avg": {
+                            "type": "number",
+                            "id": "http://jsonschema.net/meta/stars/avg",
+                            "required": false
+                        },
+                        "max": {
+                            "type": "number",
+                            "id": "http://jsonschema.net/meta/stars/max",
+                            "required": true,
+                            "default": 10
+                        },
+                        "totalVotes": {
+                            "type": "number",
+                            "id": "http://jsonschema.net/meta/stars/totalVotes",
+                            "required": false
+                        }
+                    }
+                }
+            }
+        },
+        "description-long": {
+            "type": "string",
+            "id": "http://jsonschema.net/description",
+            "required": true
+        },
+        "ingredients-list": {
+            "type": "array",
+            "id": "http://jsonschema.net/ingredients",
+            "required": true,
+            "items": {
+                "type": "object",
+                "id": "http://jsonschema.net/ingredients/0",
+                "required": false,
+                "properties": {
+                    "ingredient": {
+                        "type": "string",
+                        "id": "http://jsonschema.net/ingredients/0/ingredient",
+                        "required": false
+                    }
+                }
+            }
+        },
+        "directions-list": {
+            "type": "array",
+            "id": "http://jsonschema.net/directions-list",
+            "required": true,
+            "items": {
+                "type": "object",
+                "id": "http://jsonschema.net/directions-list/0",
+                "required": false,
+                "properties": {
+                    "title": {
+                        "type": "string",
+                        "id": "http://jsonschema.net/directions-list/0/title",
+                        "required": true,
+                        "default": "Main dish"
+                    },
+                    "directions": {
+                        "type": "array",
+                        "id": "http://jsonschema.net/directions-list/0/directions",
+                        "required": false,
+                        "items": {
+                            "type": "object",
+                            "id": "http://jsonschema.net/directions-list/0/directions/0",
+                            "required": false,
+                            "properties": {
+                                "direction": {
+                                    "type": "string",
+                                    "id": "http://jsonschema.net/directions-list/0/directions/0/direction",
+                                    "required": false
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "notes": {
+            "type": "array",
+            "id": "http://jsonschema.net/notes",
+            "required": false,
+            "items": {
+                "type": "object",
+                "id": "http://jsonschema.net/directions/0",
+                "required": false,
+                "properties": {
+                    "direction": {
+                        "type": "string",
+                        "id": "http://jsonschema.net/directions/0/direction",
+                        "required": false
+                    }
+                }
+            }
+        }
+    }
+}

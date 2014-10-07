@@ -1,0 +1,45 @@
+{   
+    "meta": {
+        "id": "beef-carpaccio",
+        "name": "Beef Carpaccio",
+        "snippet": "Italian version of beef tatare",
+        "stars": {
+            "avg": 1,
+            "max": 5,
+            "totalVotes": 100
+            },
+        "largeImageUrl": "img/canstockphoto18106517.lg.jpg", 
+        "mediumImageUrl": "img/canstockphoto18106517.md.jpg", 
+        "smallImageUrl": "img/canstockphoto18106517.sm.jpg",
+        "xsmallImageUrl": "img/canstockphoto18106517.xs.jpg",         
+        "product": {
+                "productSKU": "104",
+                "productName": "Fillet mignon steak",
+                "productURL": "http://www.wallingspencer.com/filet-mignon-steak-2-pack/"
+        }
+    },
+    "description": "Carpaccio is an Italian version of beef tatare. Made of raw beef and dressed with lemony mayonnaise, it was created in Harry's Bar in Venice, which, despite the name, is actually a first class restaurant opened by an Italian named Giuseppe Cipriani in 1931.",
+    "ingredients": [
+        {
+            "ingredient": "16 oz. beef tenderloin (fillet mignon) steak or sirloin chateau steak, partially frozen"
+        },
+        {
+            "ingredient": "2 tsp. Dijon mustard"
+        }
+    ],
+    "directions-list": [
+        { 
+        "title": "main dish",    
+        "directions": [
+            {
+                "direction": "Whisk together mustard, vinegar, oil, and salt and pepper."
+            },
+            {
+                "direction": "Slice the steak as thin as possible (this is much easier if it's partially frozen or use an electric knife)."
+            }
+        ]
+        } 
+    ]
+    ,
+    "notes": []
+}

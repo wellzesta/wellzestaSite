@@ -1,3 +1,5 @@
+<!-- Paleo App -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,56 +7,48 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New paleo recipe</title>
+    <title>Wellzesta</title>
+    <link rel="icon" type="image/png" href="http://www.wellzesta.com/icon/wellzesta_icon.png">
+    <link rel="icon" type="image/gif" href="http://www.wellzesta.com/icon/wellzesta_icon.gif">
+    <link rel="icon" type="image/jpeg" href="http://www.wellzesta.com/icon/wellzesta_icon.jpg">
+    <link rel="icon" type="image/vnd.microsoft.icon" href="http://www.wellzesta.com/icon/wellzesta_icon.ico">
 
     <!-- stylesheets -->
-    <!-- Use google's replacement for Sans -->
-    <!-- Closest google font to Avenir is Nunito http://joelcrawfordsmith.com/new/font/avenir -->
-    <!-- Closest google font to Century Gothic is Muli http://joelcrawfordsmith.com/new/font/century-gothic -->
-    <!-- Unused
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,300,700" rel="stylesheet">  
-    <link href='http://fonts.googleapis.com/css?family=Nunito:300' rel='stylesheet' type='text/css'> 
-    -->
+    <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,300,700" rel="stylesheet"> -->
     <link href='http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <!-- Used for fa-xxx -->
-    <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css'> 
+    <link href="../styles/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- <link rel="stylesheet"href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">  -->
+
     <!-- Customization -->
     <!-- Override standard bootstrap theme using something like bootswatch -->
     <!-- Sets things like 1. defult font -> Sans, 2. padding  -->
     <!-- main.css contains customized bootstrap css -->
-    <link href="css/main.css" rel="stylesheet"> 
-    <link href="css/jmr.css" rel="stylesheet">
-
-    <!-- JSON editor items that must appear in the header -->
-    <script src="scripts/jsoneditor.js"></script>
-    <script>
-    // Set the default CSS theme and icon library globally
-      JSONEditor.defaults.theme = 'bootstrap3';
-      JSONEditor.defaults.iconlib = 'fontawesome4';
-    </script>
+    <link href="../css/core.css" rel="stylesheet"> 
+    <link href="css/paleo.css" rel="stylesheet">  
   </head>
   
   <body>
-    <!-- Header -->
     <header class="header navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="row">
           <div class="navbar-header">
-            <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="http://wellzesta.com" class="navbar-brand">Wellzesta</a>
+            <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="../" class="navbar-brand"><i class="fa fa-angle-left"></i>&nbsp Wellzesta</a>
           </div>
           <div id="navbar-collapse-1" class="collapse navbar-collapse">
              <ul class="nav navbar-nav navbar-right">
-              <li><a href="#home">Paleo-Home</a></li>
-              <li><a href="#footer">Social</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#screenshots">Screenshots</a></li>
+              <li><a href="#fitness">Fitness</a></li>
+              <li><a href="#foodie">Foodie</a></li>
+              <li><a href="#contribute">Contribute</a></li>
             </ul>
           </div>
         </div>
       </div>
     </header>
 
-      <!-- Main Content -->
-    <div id="home" class="main-content">        
+<!-- Main Content -->
+    <section id="home" class="main-content">      
       <div class="container">
         <div id="forms">
           <header>
@@ -98,7 +92,8 @@
           </div>
         </div>
       </div>
-    </div>
+
+    </section>
 
     <!-- Footer -->
     <footer id="footer" class="footer text-center">
@@ -109,7 +104,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.4.13/jquery.smooth-scroll.min.js"></script>
-    <script src="scripts/main.js"></script>
+    <script src="scripts/paleo.js"></script>
 
     <!-- Local Scripts-->
     <script src="scripts/json-edit.js"></script>

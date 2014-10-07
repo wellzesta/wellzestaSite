@@ -29,12 +29,12 @@ h1, h2, h3 {
   padding: 0; }
 
 .main-content {
-  padding: 0px 0 0; }
+  padding: 50px 0 0; }
 
 .brand {
   /*background-color: #DDDDDD;*/
   text-align: center;
-  padding: 50px 0 0; ;
+  padding: 0px 0 0; ;
   margin: 0px 0 0px; }
   .brand h2 {
     font-size: 36px;
@@ -91,10 +91,11 @@ h1, h2, h3 {
     margin-bottom: 60px; }
   .fitness header h2 {
     text-align: center; }
-  @media (min-width: 768px) {
+/*Changed my mind. Bit font is fine on mobile device*/    
+/*  @media (min-width: 768px) {
     .fitness header h2 {
       font-size: 48px;
-      line-height: 70px; } }  
+      line-height: 70px; } }  */
   .fitness header h3 {
     text-transform: uppercase; }
   .fitness .feature-item {
@@ -161,10 +162,10 @@ h1, h2, h3 {
     margin-bottom: 60px; }
   .foodie header h2 {
     text-align: center; }
-  @media (min-width: 768px) {
+/*  @media (min-width: 768px) {
     .foodie header h2 {
       font-size: 48px;
-      line-height: 70px; } }  
+      line-height: 70px; } }  */
   .foodie header h3 {
     text-transform: uppercase; }
   .foodie .feature-item {
@@ -216,7 +217,8 @@ h1, h2, h3 {
         font-size: 12px; }
 
 .details {
-  padding-top: 50px; }
+  padding-top: 0px;
+  min-height: 600px; }
 .details .btn-download {
   margin-bottom: 30px; 
   color: #626262;
