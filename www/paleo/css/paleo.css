@@ -31,6 +31,19 @@ h1, h2, h3 {
 .main-content {
   padding: 50px 0 0; }
 
+.recipe {
+  background-color: #5b90bf;;
+  padding: 50px 0 50px; ;
+  margin: 0px 0 0px; }
+  .recipe h2 {
+    text-align: center;
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 36px;
+    line-height: 70px;
+    margin-bottom: 20px;
+    padding-bottom: 20px; }
+
 .brand {
   /*background-color: #DDDDDD;*/
   text-align: center;

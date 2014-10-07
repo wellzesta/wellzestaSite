@@ -1,0 +1,16 @@
+{
+    "definitions": {
+        "productType": {
+            "type": "object",
+            "properties": {
+                "type": "string",
+                "required": true,
+                "enum": [
+                    "Beef",
+                    "Seafood",
+                    "Chicken"
+                ]
+            }
+        }
+    }
+}

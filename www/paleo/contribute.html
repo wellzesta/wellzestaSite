@@ -47,8 +47,8 @@
           <div id="navbar-collapse-1" class="collapse navbar-collapse">
              <ul class="nav navbar-nav navbar-right">
               <li><a href="#home">Home</a></li>
-              <!-- <li><a href="#screenshots">Screenshots</a></li>
-              <li><a href="#fitness">Fitness</a></li>
+              <li><a href="#recipeForm">Form</a></li>
+              <!-- <li><a href="#fitness">Fitness</a></li>
               <li><a href="#foodie">Foodie</a></li>
               <li><a href="#contribute">Contribute</a></li> -->
             </ul>
@@ -58,52 +58,37 @@
     </header>
 
 <!-- Main Content -->
-    <section id="home" class="main-content">      
-      <div class="container">
-        <div id="forms">
-          <header>
-            <h1 class="text-center">Contribute</h3>
-            <p>Contribute a recipe to the <strong>Powered by Paleo</strong> App.</p>
-          </header>
-          <div class="container">          
-            <div class="row">
-              <div class="col-md-6">
-                <h3>JSON Editor supports these popular CSS frameworks:</h3>
-                <ul>
-                  <li>Bootstrap 2</li>
-                  <li>Bootstrap 3</li>
-                  <li>Foundation 3</li>
-                  <li>Foundation 4</li>
-                  <li>Foundation 5 (shown here)</li>
-                  <li>jQuery UI</li>
-                </ul>
-              </div>
-              <div class="col-md-6">
-               <h3>JSON Editor supports these popular icon libraries:</h3>
-               <ul>
-                <li>Bootstrap 2 Glyphicons</li>
-                <li>Bootstrap 3 Glyphicons</li>
-                <li>Foundicons 2</li>
-                <li>Foundicons 3</li>
-                <li>jQueryUI</li>
-                <li>Font Awesome 3</li>
-                <li>Font Awesome 4 (shown here)</li>
-              </ul>
-            </div>
-            <div class="col-md-12">
+    <section id="home" class="main-content">
+
+      <!-- HOME -->
+      <div class="brand">
+        <div class="container">
+            <h2>Contribute a recipe</h2>
+            <p>Use the recipe submission form to contribute a recipe to the <strong>Powered by Paleo</strong> App.</p><br>
+          <img src="assets/iPhone-5S-Carpachio.png" alt="preview" class="preview-img">
+        </div>
+      </div>
+    <!-- Main Splash -->      
+
+
+      <!-- Main Form -->
+      <div id="recipeForm" class="recipe">
+        <div class="container">  
+        <h2>Recipe Submission Form</h2>
+          <div id="forms">        
+            <div class="col-md-8 col-md-offset-2 ">
               <div class="row">
-                <button id='submit'>Submit (console.log)</button>
-                <button id='restore'>Restore to Default</button>
-                <span id='valid_indicator'></span>
+                <button id='submit' type="button" class="btn btn-default btn-lg">Submit (console.log)</button>
+                <button id='restore'  type="button" class="btn btn-default btn-lg">Restore to Default</button>
+                <span id='valid_indicator'></span><br/>
               </div>
             </div>
             <div class="row">
-              <div id='editor_holder' class="col-md-8 col-md-offset-0 "></div>
+              <div id='editor_holder' class="col-md-8 col-md-offset-2 "></div>
             </div>
           </div>
         </div>
       </div>
-
     </section>
 
     <!-- Footer -->
