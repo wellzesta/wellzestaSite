@@ -16,7 +16,8 @@
     <!-- stylesheets -->
     <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,600,300,700" rel="stylesheet"> -->
     <link href='http://fonts.googleapis.com/css?family=Muli:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href="../styles/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link href="../styles/font-awesome/css/font-awesome.min.css" rel="stylesheet">  -->
     <!-- <link rel="stylesheet"href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">  -->
 
     <!-- Customization -->
@@ -74,19 +75,66 @@
       <!-- Main Form -->
       <div id="recipeForm" class="recipe">
         <div class="container">  
-        <h2>Recipe Submission Form</h2>
-          <div id="forms">        
-            <div class="col-md-8 col-md-offset-2 ">
-              <div class="row">
-                <button id='submit' type="button" class="btn btn-default btn-lg">Submit (console.log)</button>
-                <button id='restore'  type="button" class="btn btn-default btn-lg">Restore to Default</button>
-                <span id='valid_indicator'></span><br/>
+          <h2>Recipe Submission Form</h2>
+
+          <!-- Buttons -->
+          <div class="col-md-8 col-md-offset-2 ">
+            <!-- Testing dropdown -->
+            <!-- Saved Menu -->           
+            <div class="brand">
+              <div class="containter">
+                <!-- Button Group -->
+                <div class="row">              
+                  <button data-toggle="dropdown" class="btn btn-default btn-lg dropdown-toggle" id='submit_captcha' type="button" ><span>Submit recipe&nbsp&nbsp<span class="caret"></span></button>                
+                  <button id='save'  type="button" class="btn btn-default btn-lg"><span><i class="fa fa-save"></i>&nbsp&nbsp</span>Save</button>
+                  <button id='open'  type="button" class="btn btn-default btn-lg"><span><i class="fa fa-folder-open-o"></i>&nbsp&nbsp</span>Open</button>
+                  <button id='delete'  type="button" class="btn btn-default btn-lg"><span><i class="fa fa-file-o"></i>&nbsp&nbsp</span>New</button>
+                  <span id='valid_indicator'></span>                  
+                </div>
+
+                <!-- Captcha -->
+                <div id="captcha" class="captcha_dropdown">
+                  <div class="container">
+                    <form class="form-horizontal" role="form" id="submitFormID" >
+                      <div class="form-group">
+                        <label for="inputName" class="col-sm-2 control-label">Name</label>
+                        <div class="col-sm-4">
+                          <input type="name" class="form-control" id="inputName" placeholder="John Doe">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-4">
+                          <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-4">
+                        <button class="btn btn-default" id='submit_json' type="button" ><span><i class="fa fa-envelope-o"></i>&nbsp&nbsp</span>Submit</button>
+                        </div>
+                      </div>
+                      <div class="form-group" id="email_sent_alert">
+                        <div class="col-sm-7">
+                          <div class="alert alert-success" role="alert">
+                          <!-- Text here -->
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
               </div>
-            </div>
+            </div>                            
+          </div>                   
+
+          <!-- Main Form widget -->
+          <div class="col-md-8 col-md-offset-2 ">
             <div class="row">
-              <div id='editor_holder' class="col-md-8 col-md-offset-2 "></div>
+              <div id='editor_holder'></div>
             </div>
           </div>
+          
         </div>
       </div>
     </section>
@@ -100,10 +148,12 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.4.13/jquery.smooth-scroll.min.js"></script>
-    <script src="scripts/paleo.js"></script>
+
 
     <!-- Local Scripts-->
-    <script src="scripts/json-edit.js"></script>
+    <script src="scripts/paleo.js"></script>
+    <script src="scripts/contribute.js"></script>
+    <!-- <script src="scripts/json-edit.js"></script> -->
   
   </body>
 </html>

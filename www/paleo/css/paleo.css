@@ -31,6 +31,18 @@ h1, h2, h3 {
 .main-content {
   padding: 50px 0 0; }
 
+.captcha_dropdown {
+  background:  #E74C3C;
+  background-color: rgba(248, 248, 248, 0.9);
+  color: #626262;
+  border-radius: 5;
+  border-color: #626262; 
+  width: 100%;
+  text-align: left;
+  padding: 20px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); 
+  margin: 10px 0 20px; }
+
 .recipe {
   background-color: #5b90bf;;
   padding: 50px 0 50px; ;
@@ -47,7 +59,7 @@ h1, h2, h3 {
 .brand {
   /*background-color: #DDDDDD;*/
   text-align: center;
-  padding: 0px 0 0; ;
+  padding: 0px 0 20px; ;
   margin: 0px 0 0px; }
   .brand h2 {
     font-size: 36px;

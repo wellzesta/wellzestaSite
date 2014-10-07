@@ -4,12 +4,12 @@
     "id": "http://jsonschema.net",
     "required": true,
     "properties": {
-        "General-information": {
+        "Recipe general information": {
             "type": "object",
             "id": "http://jsonschema.net/meta",
             "required": true,
             "properties": {
-				"Contact": {
+				"Contact information": {
 					"type":"object",
 					"id": "http://jsonschema.net/directions-list",
 					"required":false,
@@ -24,34 +24,34 @@
 							"id": "http://jsonschema.net/directions-list/Last Name",
 							"required":false
 						},
-						"email": {
+						"Email": {
 							"type":"string",
 							"id": "http://jsonschema.net/directions-list/email",
 							"required":true
 						}
 					}
 				},            
-                "Recipe-id": {
+                "Recipe id": {
                     "type": "integer",
                     "id": "http://jsonschema.net/meta/id",
                     "required": false
                 },
-                "Recipe-name": {
+                "Recipe name": {
                     "type": "string",
                     "id": "http://jsonschema.net/meta/name",
                     "required": true
                 },
-                "Recipe-description-short": {
+                "Recipe description (short)": {
                     "type": "string",
                     "id": "http://jsonschema.net/meta/snippet",
                     "required": true
                 },
-                "Main-ingredient": {
+                "Main ingredient": {
                     "type": "object",
                     "id": "http://jsonschema.net/meta/product",
                     "required": true,
                     "properties": {
-                        "Product-type": { 
+                        "Product type": { 
 			                "type": "string",
 			                "required": true,
 			                "enum": [
@@ -76,12 +76,12 @@
 			                    "Seafood:Oysters"
 			                ]
                         },
-                        "Product-SKU": {
+                        "Product SKU": {
                             "type": "integer",
                             "id": "http://jsonschema.net/meta/product/productSKU",
                             "required": false
                         },
-                        "Product-URL": {
+                        "Product URL": {
                             "type": "string",
                             "id": "http://jsonschema.net/meta/product/productURL",
                             "required": false,
@@ -94,25 +94,25 @@
                     "id": "http://jsonschema.net/meta/product",
                     "required": false,
                     "properties": {
-		                "Image-URL-large": {
+		                "Image URL (large)": {
 		                    "type": "string",
 		                    "id": "http://jsonschema.net/meta/largeImageUrl",
 		                    "required": false,
 		                    "default": "http://"
 		                },
-		                "image-URL-medium": {
+		                "image URL (medium)": {
 		                    "type": "string",
 		                    "id": "http://jsonschema.net/meta/mediumImageUrl",
 		                    "required": false,
 		                    "default": "http://"
 		                },
-		                "Image-URL-small": {
+		                "Image URL (small)": {
 		                    "type": "string",
 		                    "id": "http://jsonschema.net/meta/smallImageUrl",
 		                    "required": false,
 		                    "default": "http://"
 		                },
-		                "Image-URL-xsmall": {
+		                "Image URL (xsmall)": {
 		                    "type": "string",
 		                    "id": "http://jsonschema.net/meta/xsmallImageUrl",
 		                    "required": false,
@@ -125,18 +125,18 @@
                     "id": "http://jsonschema.net/meta/stars",
                     "required": false,
                     "properties": {
-                        "Stars-avg": {
+                        "Average rating": {
                             "type": "number",
                             "id": "http://jsonschema.net/meta/stars/avg",
                             "required": false
                         },
-                        "Stars-max-possible": {
+                        "out of": {
                             "type": "number",
                             "id": "http://jsonschema.net/meta/stars/max",
                             "required": true,
                             "default": 10
                         },
-                        "Stars-total-votes": {
+                        "Total votes": {
                             "type": "number",
                             "id": "http://jsonschema.net/meta/stars/totalVotes",
                             "required": false,
@@ -146,12 +146,12 @@
                 }
             }
         },
-        "Recipe-description-verbose": {
+        "Recipe description (long)": {
             "type": "string",
             "id": "http://jsonschema.net/description",
             "required": true
         },
-        "Ingredients-list": {
+        "Ingredients list": {
             "type": "array",
             "id": "http://jsonschema.net/ingredients",
             "required": true,
@@ -160,32 +160,15 @@
                 "id": "http://jsonschema.net/ingredients/0",
                 "required": true,
                 "properties": {
-                    "Ingredient-item": {
+                    "Ingredient item": {
                         "type": "string",
                         "id": "http://jsonschema.net/ingredients/0/ingredient",
                         "required": true
                     }
                 }
             }
-        },
-        "Ingredients-list": {
-            "type": "array",
-            "id": "http://jsonschema.net/ingredients",
-            "required": true,
-            "items": {
-                "type": "object",
-                "id": "http://jsonschema.net/ingredients/0",
-                "required": true,
-                "properties": {
-                    "Ingredient-item": {
-                        "type": "string",
-                        "id": "http://jsonschema.net/ingredients/0/ingredient",
-                        "required": true
-                    }
-                }
-            }
-        },        
-        "Directions-main-dish-list": {
+        },       
+        "Directions (main-dish) list": {
             "type": "array",
             "id": "http://jsonschema.net/ingredients",
             "required": true,
@@ -194,7 +177,7 @@
                 "id": "http://jsonschema.net/ingredients/0",
                 "required": false,
                 "properties": {
-                    "Direction-main-dish-item": {
+                    "Direction (main-dish) item": {
                         "type": "string",
                         "id": "http://jsonschema.net/ingredients/0/ingredient",
                         "required": true
@@ -202,7 +185,7 @@
                 }
             }
         },
-	    "Directions-sub-dish-list": {
+	    "Directions (sub-dishes) list": {
 	        "type": "array",
 	        "id": "http: //jsonschema.net/directions-list",
 	        "required": false,
@@ -211,13 +194,13 @@
 	            "id": "http: //jsonschema.net/directions-list/0",
 	            "required": true,
 	            "properties": {
-	                "Sub-dish-name": {
+	                "Sub-dish name": {
 	                    "type": "string",
 	                    "id": "http: //jsonschema.net/directions-list/0/title",
 	                    "required": true,
 	                    "default": "For the sauce"
 	                },
-	                "Direction-sub-dish-item": {
+	                "Direction (sub-dish) list": {
 	                    "type": "array",
 	                    "id": "http: //jsonschema.net/directions-list/0/directions",
 	                    "required": false,
@@ -226,7 +209,7 @@
 	                        "id": "http: //jsonschema.net/directions-list/0/directions/0",
 	                        "required": false,
 	                        "properties": {
-	                            "Direction-item": {
+	                            "Direction (sub-dish) item": {
 	                                "type": "string",
 	                                "id": "http: //jsonschema.net/directions-list/0/directions/0/direction",
 	                                "required": false
@@ -246,7 +229,7 @@
                 "id": "http://jsonschema.net/directions/0",
                 "required": false,
                 "properties": {
-                    "Note": {
+                    "Note item": {
                         "type": "string",
                         "id": "http://jsonschema.net/directions/0/direction",
                         "required": false
