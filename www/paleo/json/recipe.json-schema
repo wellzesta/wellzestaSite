@@ -12,17 +12,17 @@
 				"Contact information": {
 					"type":"object",
 					"id": "http://jsonschema.net/directions-list",
-					"required":false,
+					"required":true,
 					"properties":{
 						"First Name": {
 							"type":"string",
 							"id": "http://jsonschema.net/directions-list/First Name",
-							"required":false
+							"required":true
 						},
 						"Last Name": {
 							"type":"string",
 							"id": "http://jsonschema.net/directions-list/Last Name",
-							"required":false
+							"required":true
 						},
 						"Email": {
 							"type":"string",
@@ -34,7 +34,7 @@
                 "Recipe id": {
                     "type": "integer",
                     "id": "http://jsonschema.net/meta/id",
-                    "required": false
+                    "required": true
                 },
                 "Recipe name": {
                     "type": "string",

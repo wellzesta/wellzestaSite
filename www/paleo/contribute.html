@@ -88,7 +88,8 @@
                   <button data-toggle="dropdown" class="btn btn-default btn-lg dropdown-toggle" id='submit_captcha' type="button" ><span>Submit recipe&nbsp&nbsp<span class="caret"></span></button>                
                   <button id='save'  type="button" class="btn btn-default btn-lg"><span><i class="fa fa-save"></i>&nbsp&nbsp</span>Save</button>
                   <button id='open'  type="button" class="btn btn-default btn-lg"><span><i class="fa fa-folder-open-o"></i>&nbsp&nbsp</span>Open</button>
-                  <button id='delete'  type="button" class="btn btn-default btn-lg"><span><i class="fa fa-file-o"></i>&nbsp&nbsp</span>New</button>
+                  <button id='new_form'  type="button" class="btn btn-default btn-lg"><span><i class="fa fa-file-o"></i>&nbsp&nbsp</span>New</button>
+                  
                   <span id='valid_indicator'></span>                  
                 </div>
 
@@ -97,14 +98,14 @@
                   <div class="container">
                     <form class="form-horizontal" role="form" id="submitFormID" >
                       <div class="form-group">
-                        <label for="inputName" class="col-sm-2 control-label">Name</label>
+                        <label for="inputName" class="col-sm-2 control-label">Name *</label>
                         <div class="col-sm-4">
                           <input type="name" class="form-control" id="inputName" placeholder="John Doe">
                         </div>
                       </div>
 
                       <div class="form-group">
-                        <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+                        <label for="inputEmail" class="col-sm-2 control-label">Email *</label>
                         <div class="col-sm-4">
                           <input type="email" class="form-control" id="inputEmail" placeholder="Email">
                         </div>
@@ -148,7 +149,7 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.4.13/jquery.smooth-scroll.min.js"></script>
-
+    <script src="scripts/bootstrap-confirmation.js"></script>  
 
     <!-- Local Scripts-->
     <script src="scripts/paleo.js"></script>

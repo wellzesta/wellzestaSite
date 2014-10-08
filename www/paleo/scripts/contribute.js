@@ -1,31 +1,11 @@
-// $(document).ready(function(){});
+// $(document).ready(function(){
 (function(){
 
-// ============= From json-edit =================		
+// ============= From json-edit =================   
   // This is the starting value for the editor
   // We will use this to seed the initial editor 
   // and to provide a "Restore to Default" button.
-  var starting_value = {
-    name: "John Smith",
-    age: 35,
-    gender: "male",
-    location: {
-      city: "San Francisco",
-      state: "California"
-    },
-    pets: [
-      {
-        name: "Spot",
-        type: "dog",
-        fixed: true
-      },
-      {
-        name: "Whiskers",
-        type: "cat",
-        fixed: false
-      }
-    ]
-  };
+
 
   // Initialize the editor
   var editor = new JSONEditor(document.getElementById('editor_holder'),{
@@ -45,10 +25,7 @@
   //   console.log(editor.getValue());
   // });
 
-  // // Hook up the Restore to Default button
-  // document.getElementById('restore').addEventListener('click',function() {
-  //   editor.setValue(starting_value);
-  // });
+
 
   // Hook up the validation indicator to update its 
   // status whenever the editor changes
@@ -70,36 +47,70 @@
     }
   });
 
+
+
 // ============= MY CODE =================	
-	$('#captcha').hide();
-	// $('#email_sent_alert').hide();
-	
+
+  // var starting_data = $.get("json/empty_recipe.json",function(data) { return data });
+  
+
+  // function load_starting_data() {
+  //   $.get("json/empty_recipe.json",function(data) {
+  //     editor.setValue(data);
+  //   })
+  // };
+  var starting_data;
+
+  function load_starting_data() {
+    
+    if (!starting_data) {
+      $.get("json/empty_recipe.json",function(data) { 
+        // alert("not defined");
+        starting_data = data;
+        editor.setValue(starting_data);
+        // console.log(starting_data);
+      });
+    } else {
+      // alert("already defined");
+      editor.setValue(starting_data);
+    }
+  };
+
+
+// Utility functions	
 	function setupUI(){
 		$('#submit_json').prop('disabled', false);
-    	$('#email_sent_alert').hide(); 
+    $('#email_sent_alert').hide(); 
+    $('#inputName').val("");
+    $('#inputEmail').val("");
     };
-
-	// Listeners
-	$('#submit_captcha').click(function(){
-    	$('#captcha').toggle();
-    	// Get the UI right
-    	setupUI();
-	});    
 
     function validate_form() {
         var isValid = $("#inputEmail").val().length != 0 ? true : false;
         if (!isValid){ // FORM VALIDATION FAILED
             alert('Email is required');
-     		return false;
+        return false;
         } else { //FORM VALIDATION SUCCEEDED, validate the reCAPTCHA
             // captcha.show();
             return true;
         }        
     };
 
-    function send_email( emailObj ) {
+    // Listeners
+    $('#submit_captcha').click(function(){
+      	$('#captcha').toggle();
+      	// Get the UI right
+      	setupUI();
+    });        
 
-    }
+
+      $('#new_form').confirmation({
+        title: "Erase data?",
+        onConfirm: function() { 
+          load_starting_data();
+        },
+        onCancel: function() { }
+      });      
 
 
   	$('#submit_json').click(function(){    	
@@ -117,6 +128,17 @@
 	    	});
    		};
   	});  
+    
+    // Initializers
+    $('#captcha').hide();
+    load_starting_data();
+
+
+
+    // load_starting_data();
 }).call(this);
+  // $('#email_sent_alert').hide();
+//});
+
 
 

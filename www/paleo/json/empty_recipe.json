@@ -1,0 +1,33 @@
+{
+  "Recipe general information": {
+    "Contact information": {
+      "First Name": "",
+      "Last Name": "",
+      "Email": ""
+    },
+    "Recipe id": 0,
+    "Recipe name": "",
+    "Recipe description (short)": "",
+    "Main ingredient": {
+      "Product type": "Beef:Fillet Mignon Steak",
+      "Product SKU": 0,
+      "Product URL": "http://"
+    },
+    "Images": {
+      "Image URL (large)": "http://",
+      "image URL (medium)": "http://",
+      "Image URL (small)": "http://",
+      "Image URL (xsmall)": "http://"
+    },
+    "Stars": {
+      "Average rating": 0,
+      "out of": 10,
+      "Total votes": 1
+    }
+  },
+  "Recipe description (long)": "",
+  "Ingredients list": [],
+  "Directions (main-dish) list": [],
+  "Directions (sub-dishes) list": [],
+  "Notes": []
+}
