@@ -1,11 +1,7 @@
 // $(document).ready(function(){
 (function(){
-
+'use strict';
 // ============= From json-edit =================   
-  // This is the starting value for the editor
-  // We will use this to seed the initial editor 
-  // and to provide a "Restore to Default" button.
-
 
   // Initialize the editor
   var editor = new JSONEditor(document.getElementById('editor_holder'),{
@@ -13,18 +9,11 @@
     ajax: true,  
     // The schema for the editor
     schema: {
-      $ref: "json/recipe.json-schema"
+      $ref: 'json/recipe.json-schema'
     },        
     // Seed the form with a starting value
     // startval: starting_value
   });
-
-  // // Hook up the submit button to log to the console
-  // document.getElementById('submit').addEventListener('click',function() {
-  //   // Get the value from the editor
-  //   console.log(editor.getValue());
-  // });
-
 
 
   // Hook up the validation indicator to update its 
@@ -53,25 +42,19 @@
 
   // var starting_data = $.get("json/empty_recipe.json",function(data) { return data });
   
+  var starting_data; // start with null
 
-  // function load_starting_data() {
-  //   $.get("json/empty_recipe.json",function(data) {
-  //     editor.setValue(data);
-  //   })
-  // };
-  var starting_data;
-
-  function load_starting_data() {
-    
+  var load_starting_data = function () {
     if (!starting_data) {
-      $.get("json/empty_recipe.json",function(data) { 
-        // alert("not defined");
+      // constructor
+      $.get('json/empty_recipe.json',function(data) { 
+        // alert('not defined');
         starting_data = data;
         editor.setValue(starting_data);
         // console.log(starting_data);
       });
     } else {
-      // alert("already defined");
+      // alert('already defined');
       editor.setValue(starting_data);
     }
   };
@@ -81,12 +64,12 @@
 	function setupUI(){
 		$('#submit_json').prop('disabled', false);
     $('#email_sent_alert').hide(); 
-    $('#inputName').val("");
-    $('#inputEmail').val("");
-    };
+    $('#inputName').val('');
+    $('#inputEmail').val('');
+    }
 
     function validate_form() {
-        var isValid = $("#inputEmail").val().length != 0 ? true : false;
+        var isValid = $('#inputEmail').val().length !== 0 ? true : false;
         if (!isValid){ // FORM VALIDATION FAILED
             alert('Email is required');
         return false;
@@ -94,7 +77,7 @@
             // captcha.show();
             return true;
         }        
-    };
+    }
 
     // Listeners
     $('#submit_captcha').click(function(){
@@ -105,7 +88,7 @@
 
 
       $('#new_form').confirmation({
-        title: "Erase data?",
+        title: 'Erase data?',
         onConfirm: function() { 
           load_starting_data();
         },
@@ -121,13 +104,13 @@
 	    	emailObj.email = $('#inputEmail').val();
 	    	emailObj.jstr = JSON.stringify(editor.getValue());
 	    	console.log(emailObj);
-	    	$.post("send_email.php", emailObj, function(res){ 
+	    	$.post('send_email.php', emailObj, function(res){ 
 	    		var _alert = $('#email_sent_alert');
 	    		_alert.slideDown();
 	    		$('.alert').text(res);
 	    	});
-   		};
-  	});  
+   		}
+  	}); 
     
     // Initializers
     $('#captcha').hide();
