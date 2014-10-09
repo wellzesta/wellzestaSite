@@ -1,3 +1,2 @@
-website.sublime-project
-website.sublime-workspace
+*.sublime*
 .DS_Store
