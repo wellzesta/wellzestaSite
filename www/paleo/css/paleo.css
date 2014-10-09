@@ -45,9 +45,7 @@ h1, h2, h3 {
 .recipe {
   background-color: #5b90bf;;
   padding: 50px 0 50px; ;
-  margin: 0px 0 0px;
-  border: 5px solid #626262; /*Doesn't work*/
-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);}
+  margin: 0px 0 0px; }
   .recipe h2 {
     text-align: center;
     color: #fff;

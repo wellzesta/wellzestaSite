@@ -60,11 +60,12 @@
     }
   }
 
-	var setupUI = function(){
-		$('#submit_json').prop('disabled', false);
-    $('#email_sent_alert').hide(); 
-    $('#inputName').val('');
-    $('#inputEmail').val('');
+  	var setupUI = function(){
+  		$('#submit_json').prop('disabled', false);
+      $('#email_sent_alert').hide(); 
+      // Reset form information
+      // $('#inputName').val('');
+      // $('#inputEmail').val('');
     }
 
     var validate_form = function() {

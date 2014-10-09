@@ -236,6 +236,12 @@
                     }
                 }
             }
+        },
+        "Schema version": {
+            "type": "string",
+            "id": "http://jsonschema.net/schema",
+            "required": true,
+            "default": "1.0"
         }
     }
 }
