@@ -79,15 +79,13 @@
 
           <!-- Buttons -->
           <div class="col-md-8 col-md-offset-2 ">
-            <!-- Testing dropdown -->
-            <!-- Saved Menu -->           
             <div class="brand">
               <div class="containter">
                 <!-- Button Group -->
                 <div class="row">              
-                  <button data-toggle="dropdown" class="btn btn-default btn-lg dropdown-toggle" id='submit_captcha' type="button" ><span>Submit recipe&nbsp&nbsp<span class="caret"></span></button>                
-                  <button id='save'  type="button" class="btn btn-default btn-lg"><span><i class="fa fa-save"></i>&nbsp&nbsp</span>Save</button>
-                  <button id='open'  type="button" class="btn btn-default btn-lg"><span><i class="fa fa-folder-open-o"></i>&nbsp&nbsp</span>Open</button>
+                  <button data-toggle="dropdown" class="btn btn-default btn-lg dropdown-toggle" id='submit_captcha' type="button"><span><i class="fa fa-caret-down"></i>&nbsp&nbsp</span>Submit recipe</button>                
+                  <button id='save_json' type="button" class="btn btn-default btn-lg"><span><i class="fa fa-save"></i>&nbsp&nbsp</span>Save</button>
+                  <button id='load_json'  type="button" class="btn btn-default btn-lg"><span><i class="fa fa-folder-open-o"></i>&nbsp&nbsp</span>Load</button>
                   <button id='new_form'  type="button" class="btn btn-default btn-lg"><span><i class="fa fa-file-o"></i>&nbsp&nbsp</span>New</button>
                   
                   <span id='valid_indicator'></span>                  
@@ -135,6 +133,25 @@
               <div id='editor_holder'></div>
             </div>
           </div>
+
+          <!-- Save button -->
+          <div class="col-md-8 col-md-offset-2 ">
+            <div class="brand">
+              <div class="containter">
+                <!-- Button Group -->
+                <div class="row">     
+            <!-- class needed to get animated scrolling -->       
+                  <div class="navbar-nav"> 
+                    <div>     
+                      <a href="#recipeForm">              
+                        <button id='save'  type="button" class="btn btn-default btn-lg"><span><i class="fa fa-chevron-circle-up"></i>&nbsp&nbsp</span>Submit</button>
+                      </a>
+                  </div>                  
+                </div>
+              </div>
+            </div>
+          </div>
+        
           
         </div>
       </div>

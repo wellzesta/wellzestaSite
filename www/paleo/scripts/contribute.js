@@ -1,6 +1,7 @@
 // $(document).ready(function(){
 (function(){
-'use strict';
+
+'use strict'
 // ============= From json-edit =================   
 
   // Initialize the editor
@@ -39,11 +40,11 @@
 
 
 // ============= MY CODE =================	
-
-  // var starting_data = $.get("json/empty_recipe.json",function(data) { return data });
   
+  // Global variables
   var starting_data; // start with null
 
+  // Utility functions  
   var load_starting_data = function () {
     if (!starting_data) {
       // constructor
@@ -57,18 +58,16 @@
       // alert('already defined');
       editor.setValue(starting_data);
     }
-  };
+  }
 
-
-// Utility functions	
-	function setupUI(){
+	var setupUI = function(){
 		$('#submit_json').prop('disabled', false);
     $('#email_sent_alert').hide(); 
     $('#inputName').val('');
     $('#inputEmail').val('');
     }
 
-    function validate_form() {
+    var validate_form = function() {
         var isValid = $('#inputEmail').val().length !== 0 ? true : false;
         if (!isValid){ // FORM VALIDATION FAILED
             alert('Email is required');
@@ -86,15 +85,13 @@
       	setupUI();
     });        
 
-
-      $('#new_form').confirmation({
-        title: 'Erase data?',
-        onConfirm: function() { 
-          load_starting_data();
-        },
-        onCancel: function() { }
-      });      
-
+    $('#new_form').confirmation({
+      title: 'Erase data?',
+      onConfirm: function() { 
+        load_starting_data();
+      },
+      onCancel: function() { }
+    });      
 
   	$('#submit_json').click(function(){    	
     	if (validate_form()) {
@@ -111,14 +108,30 @@
 	    	});
    		}
   	}); 
-    
-    // Initializers
-    $('#captcha').hide();
-    load_starting_data();
+
+    $('#save_json').click(function(){  
+      window.localStorage['local.recipe'] = JSON.stringify( editor.getValue() );
+      alert('Form data saved');
+    });
+
+    $('#load_json').click(function(){  
+      var recipe = window.localStorage['local.recipe'];
+      if(recipe) {
+        editor.setValue( JSON.parse(recipe) );
+      } else {
+        alert('Nothing to load');
+      }
+    });
+        
 
 
+// Initializers
+$('#captcha').hide();
+load_starting_data();
 
     // load_starting_data();
+
+
 }).call(this);
   // $('#email_sent_alert').hide();
 //});
