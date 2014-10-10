@@ -5,8 +5,8 @@
             "Last Name": "",
             "Email": ""
         },
-        "Recipe id": 0,
-        "Recipe name": "",
+        "Recipe id": 1,
+        "Recipe name": "Recipe 1",
         "Recipe description (short)": "",
         "Main ingredient": {
             "Product type": "Beef:Fillet Mignon Steak",

@@ -1,6 +1,7 @@
 // $(document).ready(function(){
 (function(){
 
+// Only set up DOM listeners after the UI has finished loading!
 'use strict'
 // ============= From json-edit =================   
 
@@ -79,7 +80,23 @@
         }        
     }
 
-    // Listeners
+    var send_email = function() {      
+      if (validate_form()) {
+        // if successful
+        var emailObj = {};
+        emailObj.name = $('#inputName').val();
+        emailObj.email = $('#inputEmail').val();
+        emailObj.jstr = JSON.stringify(editor.getValue());
+        console.log(emailObj);
+        $.post('send_email.php', emailObj, function(res){ 
+          var _alert = $('#email_sent_alert');
+          _alert.slideDown();
+          $('.alert').text(res);
+        });
+      };
+     };
+
+    // Register event Listeners
     $('#submit_captcha').click(function(){
       	$('#captcha').toggle();
       	// Get the UI right
@@ -94,21 +111,7 @@
       onCancel: function() { }
     });      
 
-  	$('#submit_json').click(function(){    	
-    	if (validate_form()) {
-	    	// if successful
-	    	var emailObj = {};
-	    	emailObj.name = $('#inputName').val();
-	    	emailObj.email = $('#inputEmail').val();
-	    	emailObj.jstr = JSON.stringify(editor.getValue());
-	    	console.log(emailObj);
-	    	$.post('send_email.php', emailObj, function(res){ 
-	    		var _alert = $('#email_sent_alert');
-	    		_alert.slideDown();
-	    		$('.alert').text(res);
-	    	});
-   		}
-  	}); 
+  	$('#submit_json').click(send_email);
 
     $('#save_json').click(function(){  
       window.localStorage['local.recipe'] = JSON.stringify( editor.getValue() );
@@ -124,18 +127,12 @@
       }
     });
         
-
-
-// Initializers
-$('#captcha').hide();
-load_starting_data();
-
-    // load_starting_data();
-
+  // Initializers
+  $('#captcha').hide();
+  load_starting_data();
 
 }).call(this);
-  // $('#email_sent_alert').hide();
-//});
+
 
 
 
