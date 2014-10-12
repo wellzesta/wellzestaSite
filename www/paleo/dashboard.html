@@ -19,6 +19,7 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- <link href="../styles/font-awesome/css/font-awesome.min.css" rel="stylesheet">  -->
     <!-- <link rel="stylesheet"href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">  -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
 
     <!-- Customization -->
     <!-- Override standard bootstrap theme using something like bootswatch -->
@@ -83,7 +84,7 @@
               <div class="containter">
                 <!-- Button Group -->
                 <div class="row">              
-                  <button data-toggle="dropdown" class="btn btn-default btn-lg dropdown-toggle" id='submit_captcha' type="button"><span><i class="fa fa-caret-down"></i>&nbsp&nbsp</span>Submit recipe</button>                
+                  <button id='push_json' type="button" class="btn btn-default btn-lg"><span>Push recipe</button>                
                   <button id='save_json' type="button" class="btn btn-default btn-lg"><span><i class="fa fa-save"></i>&nbsp&nbsp</span>Save</button>
                   <button id='load_json'  type="button" class="btn btn-default btn-lg"><span><i class="fa fa-folder-open-o"></i>&nbsp&nbsp</span>Load</button>
                   <button id='new_form'  type="button" class="btn btn-default btn-lg"><span><i class="fa fa-file-o"></i>&nbsp&nbsp</span>New</button>
@@ -91,38 +92,6 @@
                   <span id='valid_indicator'></span>                  
                 </div>
 
-                <!-- Captcha -->
-                <div id="captcha" class="captcha_dropdown">
-                  <div class="container">
-                    <form class="form-horizontal" role="form" id="submitFormID" >
-                      <div class="form-group">
-                        <label for="inputName" class="col-sm-2 control-label">Name *</label>
-                        <div class="col-sm-4">
-                          <input type="name" class="form-control" id="inputName" placeholder="John Doe">
-                        </div>
-                      </div>
-
-                      <div class="form-group">
-                        <label for="inputEmail" class="col-sm-2 control-label">Email *</label>
-                        <div class="col-sm-4">
-                          <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        <div class="col-sm-offset-2 col-sm-4">
-                        <button class="btn btn-default" id='submit_json' type="button" ><span><i class="fa fa-envelope-o"></i>&nbsp&nbsp</span>Submit</button>
-                        </div>
-                      </div>
-                      <div class="form-group" id="email_sent_alert">
-                        <div class="col-sm-7">
-                          <div class="alert alert-success" role="alert">
-                          <!-- Text here -->
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                </div>
               </div>
             </div>                            
           </div>                   
@@ -166,15 +135,15 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.4.13/jquery.smooth-scroll.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>  
     <script src="scripts/bootstrap-confirmation.js"></script> 
     <script src="https://cdn.firebase.com/js/client/1.1.1/firebase.js"></script>
 
     <!-- Local Scripts-->
     <script src="scripts/paleo.js"></script>
-    <script src="scripts/dashboard.js"></script>
-    <script src="scripts/contribute.js"></script>
+    <script src="scripts/services.js"></script>
+    <script src="scripts/dashboardCtrl.js"></script>
     
-    <!-- <script src="scripts/json-edit.js"></script> -->
   
   </body>
 </html>
