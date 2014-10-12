@@ -7,8 +7,10 @@ $email_subject = "New Paleo Recipe";
 $email_name = $_POST['name']; // required
 $email_from = $_POST['email']; // required
 $json = $_POST['jstr'];
-$email_message =  "// ".$email_subject." submitted by ".$email_name." <".$email_from.">\n";
+$email_message =  $email_subject." submitted by ".$email_name." <".$email_from.">\n\n\n";
+$email_message .= "=============== BEGIN RECIPE ===============\n";
 $email_message .= $json."\n";   
+$email_message .= "=============== END RECIPE ===============\n";   
 
 $email_to = $email_me.",".$email_from; // CC to sender
 
