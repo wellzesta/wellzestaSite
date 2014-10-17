@@ -111,15 +111,15 @@ h1, h2, h3 {
   padding-bottom: 0px;
   border-bottom: 2px solid #eeeeee; }
   .fitness > header {
-    padding: 0 20px;
+    padding: 0;
     margin-bottom: 60px; }
   .fitness header h2 {
     text-align: center; }
 /*Changed my mind. Bit font is fine on mobile device*/    
-/*  @media (min-width: 768px) {
+  @media (min-width: 768px) {
     .fitness header h2 {
-      font-size: 48px;
-      line-height: 70px; } }  */
+      font-size: 42px;
+      line-height: 70px; } }  
   .fitness header h3 {
     text-transform: uppercase; }
   .fitness .feature-item {
@@ -182,14 +182,14 @@ h1, h2, h3 {
   color: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid #eeeeee; }
   .foodie > header {
-    padding: 0 20px;
+    padding: 0;
     margin-bottom: 60px; }
   .foodie header h2 {
     text-align: center; }
-/*  @media (min-width: 768px) {
+  @media (min-width: 768px) {
     .foodie header h2 {
-      font-size: 48px;
-      line-height: 70px; } }  */
+      font-size: 42px;
+      line-height: 70px; } }  
   .foodie header h3 {
     text-transform: uppercase; }
   .foodie .feature-item {

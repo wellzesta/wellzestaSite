@@ -95,10 +95,10 @@ var p = p || {};
       emailObj.jstr = JSON.stringify(p.editor.getValue());
       console.log(emailObj);
       $.post('send_email.php', emailObj, function(res){ 
-        // var _alert = $('#email_sent_alert');
-        // _alert.slideDown();
-        // $('.alert').text(res);
-        toastr.success(res, 'Email:')
+        var _alert = $('#email_sent_alert');
+        _alert.slideDown();
+        $('.alert').text(res);
+        // toastr.success(res, 'Email:')
       });
     }
   }
